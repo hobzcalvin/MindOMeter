@@ -1,0 +1,114 @@
+IOS NOTES
+
+Some random notes I wrote while developing.
+
+
+UIScrollView::layoutSubviews is called on every frame of scrolling and zooming, so it's a great place to change layouts that will look right during motion. call the super version first.
+
+scrollviewdidscroll is called before the new frame is actually drawn, so it's a solid place to do new stuff
+
+
+
+"scale transform to the common container of this layer" => good scaling?!
+make sure layer.shouldRasterize = NO
+
+
+
+
+
+
+
+
+
+several data points coming in at once, so many paths updated with their own data points.
+view should scroll continuously.
+data shouldn't drop if the ui thread is held up doing scroll stuff.
+
+
+
+
+
+
+
+every second (or so), data comes in. it is put in an array where index is seconds since start.
+the WaveScrollView has access to this array. it gives access to its child elements as well.
+child elements are a particular band display: min/max labels, gridlines, color, height obeyed. they display the waveform currently in the window.
+a path is always in second-long increments. its points are only changed when a new second/seconds are being seen. otherwise, it is shifted as necessary to display as desired. this way, on follow the worst path redo rate is 2/second (one for the points leaving the window, one for the points entering the window). 
+
+
+
+
+
+XXX: what about atomic accesses to the data array???
+
+Ǌ
+
+
+    eSenseAttention = 0;
+    eSenseMeditation = 0;
+    eegDelta = 926095;
+    eegHighAlpha = 11456;
+    eegHighBeta = 15995;
+    eegHighGamma = 1453;
+    eegLowAlpha = 6117;
+    eegLowBeta = 4500;
+    eegLowGamma = 813;
+    eegTheta = 41178;
+    poorSignal = 55;
+
+
+
+CGPathCreateCopyByTransformingPath(CFArrayGetValueAtIndex((CFMutableArrayRef)paths, idx), &transform);
+CFArrayAppendValue((CFMutableArrayRef)paths, curPath);
+
+
+
+
+
+
+
+
+
+[nonmutablething mutableCopy];
+
+
+
+
+
+
+having one opaque CAShapeLayer for the waves is 
+
+
+
+
+
+XXX: headset reconnects but app doesn't notice. maybe watch the EAccessory stuff on our own and destroy/recreate manager if it's the culprit?
+
+
+applicationWillResignActive:
+- stop sizeTimer, demoTimer (curTime timer is infrequent, does little, and we don't want it off sync...)
+
+applicationDidBecomeActive:
+- undo the above
+
+ applicationDidEnterBackground:
+- do something to stop updates to UI elements (the timers may be sufficient)
+- probably clear out demo data if any
+- clear real data if runInBackground is false
+- otherwise, save real data??
+- maybe something listen to  UIApplicationDidEnterBackgroundNotification?
+- shut down bluetooth connection etc
+
+applicationWillEnterForeground:
+- undo the above
+
+applicationWillTerminate:
+
+
+
+Suspended apps are not notified of termination but if your app is currently running in the background state (and not suspended), the system calls the applicationWillTerminate: method of your app delegate.
+
+
+
+
+

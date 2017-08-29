@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>eSenseAttention</key>
+	<dict>
+		<key>longLabel</key>
+		<string>Attention</string>
+		<key>index</key>
+		<integer>0</integer>
+		<key>dynamic</key>
+		<false/>
+		<key>hue</key>
+		<real>0.1</real>
+		<key>label</key>
+		<string>!</string>
+		<key>labelXOff</key>
+		<integer>5</integer>
+		<key>max</key>
+		<integer>100</integer>
+		<key>min</key>
+		<integer>0</integer>
+		<key>sat</key>
+		<real>0.4</real>
+	</dict>
+	<key>eSenseMeditation</key>
+	<dict>
+		<key>longLabel</key>
+		<string>Meditation</string>
+		<key>index</key>
+		<integer>1</integer>
+		<key>dynamic</key>
+		<false/>
+		<key>hue</key>
+		<real>0.6</real>
+		<key>label</key>
+		<string>ॐ</string>
+		<key>labelYOff</key>
+		<integer>5</integer>
+		<key>labelXOff</key>
+		<integer>-2</integer>
+		<key>max</key>
+		<integer>100</integer>
+		<key>min</key>
+		<integer>0</integer>
+		<key>sat</key>
+		<real>0.4</real>
+	</dict>
+	<key>eegDelta</key>
+	<dict>
+		<key>desc</key>
+		<string>0.5 - 2.75Hz</string>
+		<key>longLabel</key>
+		<string>Delta</string>
+		<key>index</key>
+		<integer>2</integer>
+		<key>dynamic</key>
+		<true/>
+		<key>hue</key>
+		<integer>0</integer>
+		<key>label</key>
+		<string>Δ</string>
+		<key>labelYOff</key>
+		<integer>-3</integer>
+		<key>sat</key>
+		<integer>1</integer>
+	</dict>
+	<key>eegHighAlpha</key>
+	<dict>
+		<key>desc</key>
+		<string>10 - 11.75Hz</string>
+		<key>longLabel</key>
+		<string>High Alpha</string>
+		<key>index</key>
+		<integer>5</integer>
+		<key>dynamic</key>
+		<true/>
+		<key>hue</key>
+		<real>0.375</real>
+		<key>label</key>
+		<string>Α</string>
+		<key>sat</key>
+		<integer>1</integer>
+	</dict>
+	<key>eegHighBeta</key>
+	<dict>
+		<key>desc</key>
+		<string>18 - 29.75Hz</string>
+		<key>longLabel</key>
+		<string>High Beta</string>
+		<key>index</key>
+		<integer>7</integer>
+		<key>dynamic</key>
+		<true/>
+		<key>hue</key>
+		<real>0.625</real>
+		<key>label</key>
+		<string>Β</string>
+		<key>sat</key>
+		<real>0.6</real>
+	</dict>
+	<key>eegHighGamma</key>
+	<dict>
+		<key>desc</key>
+		<string>41 - 49.75Hz</string>
+		<key>longLabel</key>
+		<string>Mid Gamma</string>
+		<key>index</key>
+		<integer>9</integer>
+		<key>dynamic</key>
+		<true/>
+		<key>hue</key>
+		<real>0.875</real>
+		<key>label</key>
+		<string>Γ</string>
+		<key>sat</key>
+		<integer>1</integer>
+	</dict>
+	<key>eegLowAlpha</key>
+	<dict>
+		<key>desc</key>
+		<string>7.5 - 9.25Hz</string>
+		<key>longLabel</key>
+		<string>Low Alpha</string>
+		<key>index</key>
+		<integer>4</integer>
+		<key>dynamic</key>
+		<true/>
+		<key>hue</key>
+		<real>0.175</real>
+		<key>label</key>
+		<string>α</string>
+		<key>labelYOff</key>
+		<integer>-6</integer>
+		<key>sat</key>
+		<integer>1</integer>
+	</dict>
+	<key>eegLowBeta</key>
+	<dict>
+		<key>desc</key>
+		<string>13 - 16.75Hz</string>
+		<key>longLabel</key>
+		<string>Low Beta</string>
+		<key>index</key>
+		<integer>6</integer>
+		<key>dynamic</key>
+		<true/>
+		<key>hue</key>
+		<real>0.5</real>
+		<key>label</key>
+		<string>β</string>
+		<key>labelYOff</key>
+		<integer>-2</integer>
+		<key>sat</key>
+		<integer>1</integer>
+	</dict>
+	<key>eegLowGamma</key>
+	<dict>
+		<key>desc</key>
+		<string>31 - 39.75Hz</string>
+		<key>longLabel</key>
+		<string>Low Gamma</string>
+		<key>index</key>
+		<integer>8</integer>
+		<key>dynamic</key>
+		<true/>
+		<key>hue</key>
+		<real>0.75</real>
+		<key>label</key>
+		<string>γ</string>
+		<key>labelYOff</key>
+		<integer>-9</integer>
+		<key>sat</key>
+		<real>0.7</real>
+	</dict>
+	<key>eegTheta</key>
+	<dict>
+		<key>desc</key>
+		<string>3.5 - 6.75Hz</string>
+		<key>longLabel</key>
+		<string>Theta</string>
+		<key>index</key>
+		<integer>3</integer>
+		<key>dynamic</key>
+		<true/>
+		<key>hue</key>
+		<real>0.125</real>
+		<key>label</key>
+		<string>Θ</string>
+		<key>sat</key>
+		<integer>1</integer>
+	</dict>
+	<key>poorSignal</key>
+	<dict>
+		<key>desc</key>
+		<string>If this drops, adjust your headset.</string>
+		<key>longLabel</key>
+		<string>Signal Quality</string>
+		<key>index</key>
+		<integer>10</integer>
+		<key>dynamic</key>
+		<false/>
+		<key>hue</key>
+		<integer>0</integer>
+		<key>label</key>
+		<string>?</string>
+		<key>max</key>
+		<integer>0</integer>
+		<key>min</key>
+		<integer>200</integer>
+		<key>sat</key>
+		<integer>0</integer>
+	</dict>
+</dict>
+</plist>

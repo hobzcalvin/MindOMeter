@@ -1,0 +1,20 @@
+This is a dump of the MindOMeter app source code as it was released to the App Store in February 2013. It's provided as-is to the community because I no longer have the resources (including a headset) to develop or distribute it.
+
+MindOMeter visualizes your brainwaves much like classic electroencephalography (EEG) machines. It connects wirelessly to the MindWave Mobile EEG headset by NeuroSky. Try the demo mode before you buy the headset here: http://store.neurosky.com/products/mindwave-mobile
+
+MindOMeter displays your brainwaves as waveforms. You can view standard frequency bands (alpha, theta, etc.) as well as NeuroSky's proprietary eSense attention and meditation meters. Use your finger to scroll; pinch to change zoom.
+
+MindOMeter can also run in the background, so you can use other apps while measuring your mind. How did that game affect your attention? What are those binaural beats doing to your gamma waves? Sleep your device and record your brainwaves while you move, work, or meditate.
+
+
+EEG, electroencephalography, brainwave, brain wave, meditation, attention, mind, brain, 
+MindWave, MindWave Mobile, Neurosky, eSense
+
+
+This app works with MindWave Mobile by NeuroSky, a consumer electroencephalography (EEG) device. More information:
+http://store.neurosky.com/products/mindwave-mobile
+The app communicates with the headset via bluetooth.
+When no headset is found, the app enters demo mode, which simulates the brainwaves with random data.
+The app's settings are pretty self-explanatory. Background mode enables the app to receive data from the headset while running in the background; this is off by default.
+
+

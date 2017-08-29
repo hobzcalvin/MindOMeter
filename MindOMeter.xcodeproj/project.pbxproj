@@ -1,0 +1,499 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		9321EB8D165DBCF60002212E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9321EB8C165DBCF60002212E /* UIKit.framework */; };
+		9321EB8F165DBCF60002212E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9321EB8E165DBCF60002212E /* Foundation.framework */; };
+		9321EB91165DBCF60002212E /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9321EB90165DBCF60002212E /* CoreGraphics.framework */; };
+		9321EB97165DBCF60002212E /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 9321EB95165DBCF60002212E /* InfoPlist.strings */; };
+		9321EB99165DBCF60002212E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9321EB98165DBCF60002212E /* main.m */; };
+		9321EB9D165DBCF60002212E /* MindOMeterAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9321EB9C165DBCF60002212E /* MindOMeterAppDelegate.m */; };
+		9321EBA6165DBCF60002212E /* MainStoryboard_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9321EBA4165DBCF60002212E /* MainStoryboard_iPhone.storyboard */; };
+		9321EBA9165DBCF60002212E /* MainStoryboard_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9321EBA7165DBCF60002212E /* MainStoryboard_iPad.storyboard */; };
+		9321EBAC165DBCF60002212E /* MindOMeterMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9321EBAB165DBCF60002212E /* MindOMeterMainViewController.m */; };
+		9321EBAF165DBCF60002212E /* MindOMeterFlipsideViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9321EBAE165DBCF60002212E /* MindOMeterFlipsideViewController.m */; };
+		9330DDDB166692BB00A8251B /* AudioQueueObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 9330DDCC166692BB00A8251B /* AudioQueueObject.m */; };
+		9330DDDC166692BB00A8251B /* AudioSignalAnalyzer.m in Sources */ = {isa = PBXBuildFile; fileRef = 9330DDCE166692BB00A8251B /* AudioSignalAnalyzer.m */; };
+		9330DDDD166692BB00A8251B /* AudioSignalGenerator.m in Sources */ = {isa = PBXBuildFile; fileRef = 9330DDD0166692BB00A8251B /* AudioSignalGenerator.m */; };
+		9330DDDE166692BB00A8251B /* FSKRecognizer.mm in Sources */ = {isa = PBXBuildFile; fileRef = 9330DDD4166692BB00A8251B /* FSKRecognizer.mm */; };
+		9330DDDF166692BB00A8251B /* FSKSerialGenerator.m in Sources */ = {isa = PBXBuildFile; fileRef = 9330DDD6166692BB00A8251B /* FSKSerialGenerator.m */; };
+		9330DDE0166692BB00A8251B /* libTGAccessory.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9330DDD8166692BB00A8251B /* libTGAccessory.a */; };
+		9330DDE21666BEF400A8251B /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9330DDE11666BEF400A8251B /* AudioToolbox.framework */; };
+		9330DDE41666BEFB00A8251B /* ExternalAccessory.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9330DDE31666BEFB00A8251B /* ExternalAccessory.framework */; };
+		933B374616712D0E00CEF2D3 /* WaveProperties.plist in Resources */ = {isa = PBXBuildFile; fileRef = 933B374516712D0E00CEF2D3 /* WaveProperties.plist */; };
+		933B3750167167B700CEF2D3 /* Defaults.plist in Resources */ = {isa = PBXBuildFile; fileRef = 933B374F167167B700CEF2D3 /* Defaults.plist */; };
+		933F67FA1669236000DDC7B0 /* WaveScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 933F67F91669236000DDC7B0 /* WaveScrollView.m */; };
+		93BE0BFF16632159008905AC /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 93BE0BFE16632159008905AC /* QuartzCore.framework */; };
+		93CE65CE167BC5EE00F26738 /* app-icon-57.png in Resources */ = {isa = PBXBuildFile; fileRef = 93CE65CD167BC5EE00F26738 /* app-icon-57.png */; };
+		93CE65D0167BC5F200F26738 /* app-icon-114.png in Resources */ = {isa = PBXBuildFile; fileRef = 93CE65CF167BC5F200F26738 /* app-icon-114.png */; };
+		93CE65D2167BC5FF00F26738 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 93CE65D1167BC5FF00F26738 /* Default.png */; };
+		93CE65D4167BC62C00F26738 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 93CE65D3167BC62C00F26738 /* Default@2x.png */; };
+		93CE65D6167BC63300F26738 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 93CE65D5167BC63300F26738 /* Default-568h@2x.png */; };
+		93CE65D8167BC64400F26738 /* app-icon-72.png in Resources */ = {isa = PBXBuildFile; fileRef = 93CE65D7167BC64400F26738 /* app-icon-72.png */; };
+		93CE65DA167BC69300F26738 /* app-icon-144.png in Resources */ = {isa = PBXBuildFile; fileRef = 93CE65D9167BC69300F26738 /* app-icon-144.png */; };
+		93CE65DC167BC6A400F26738 /* Default-Portrait~ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = 93CE65DB167BC6A400F26738 /* Default-Portrait~ipad.png */; };
+		93CE65DE167BC6A600F26738 /* Default-Landscape~ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = 93CE65DD167BC6A600F26738 /* Default-Landscape~ipad.png */; };
+		93CE65E0167BC6B200F26738 /* Default-Portrait@2x~ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = 93CE65DF167BC6B200F26738 /* Default-Portrait@2x~ipad.png */; };
+		93CE65E2167BC6B500F26738 /* Default-Landscape@2x~ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = 93CE65E1167BC6B500F26738 /* Default-Landscape@2x~ipad.png */; };
+		93FF2239166F032B00DA60CE /* CoreText.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 93FF2238166F032B00DA60CE /* CoreText.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		9321EB88165DBCF60002212E /* mindometer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = mindometer.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		9321EB8C165DBCF60002212E /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		9321EB8E165DBCF60002212E /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		9321EB90165DBCF60002212E /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		9321EB94165DBCF60002212E /* MindOMeter-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "MindOMeter-Info.plist"; sourceTree = "<group>"; };
+		9321EB96165DBCF60002212E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		9321EB98165DBCF60002212E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		9321EB9A165DBCF60002212E /* MindOMeter-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MindOMeter-Prefix.pch"; sourceTree = "<group>"; };
+		9321EB9B165DBCF60002212E /* MindOMeterAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MindOMeterAppDelegate.h; sourceTree = "<group>"; };
+		9321EB9C165DBCF60002212E /* MindOMeterAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MindOMeterAppDelegate.m; sourceTree = "<group>"; };
+		9321EBA5165DBCF60002212E /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPhone.storyboard; sourceTree = "<group>"; };
+		9321EBA8165DBCF60002212E /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPad.storyboard; sourceTree = "<group>"; };
+		9321EBAA165DBCF60002212E /* MindOMeterMainViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MindOMeterMainViewController.h; sourceTree = "<group>"; };
+		9321EBAB165DBCF60002212E /* MindOMeterMainViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MindOMeterMainViewController.m; sourceTree = "<group>"; };
+		9321EBAD165DBCF60002212E /* MindOMeterFlipsideViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MindOMeterFlipsideViewController.h; sourceTree = "<group>"; };
+		9321EBAE165DBCF60002212E /* MindOMeterFlipsideViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MindOMeterFlipsideViewController.m; sourceTree = "<group>"; };
+		9330DDCB166692BB00A8251B /* AudioQueueObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AudioQueueObject.h; sourceTree = "<group>"; };
+		9330DDCC166692BB00A8251B /* AudioQueueObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AudioQueueObject.m; sourceTree = "<group>"; };
+		9330DDCD166692BB00A8251B /* AudioSignalAnalyzer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AudioSignalAnalyzer.h; sourceTree = "<group>"; };
+		9330DDCE166692BB00A8251B /* AudioSignalAnalyzer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AudioSignalAnalyzer.m; sourceTree = "<group>"; };
+		9330DDCF166692BB00A8251B /* AudioSignalGenerator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AudioSignalGenerator.h; sourceTree = "<group>"; };
+		9330DDD0166692BB00A8251B /* AudioSignalGenerator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AudioSignalGenerator.m; sourceTree = "<group>"; };
+		9330DDD1166692BB00A8251B /* CharReceiver.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CharReceiver.h; sourceTree = "<group>"; };
+		9330DDD2166692BB00A8251B /* Constants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Constants.h; sourceTree = "<group>"; };
+		9330DDD3166692BB00A8251B /* FSKRecognizer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FSKRecognizer.h; sourceTree = "<group>"; };
+		9330DDD4166692BB00A8251B /* FSKRecognizer.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = FSKRecognizer.mm; sourceTree = "<group>"; };
+		9330DDD5166692BB00A8251B /* FSKSerialGenerator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FSKSerialGenerator.h; sourceTree = "<group>"; };
+		9330DDD6166692BB00A8251B /* FSKSerialGenerator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FSKSerialGenerator.m; sourceTree = "<group>"; };
+		9330DDD7166692BB00A8251B /* lockfree.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = lockfree.h; sourceTree = "<group>"; };
+		9330DDD8166692BB00A8251B /* libTGAccessory.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libTGAccessory.a; sourceTree = "<group>"; };
+		9330DDD9166692BB00A8251B /* TGAccessoryDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TGAccessoryDelegate.h; sourceTree = "<group>"; };
+		9330DDDA166692BB00A8251B /* TGAccessoryManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TGAccessoryManager.h; sourceTree = "<group>"; };
+		9330DDE11666BEF400A8251B /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		9330DDE31666BEFB00A8251B /* ExternalAccessory.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ExternalAccessory.framework; path = System/Library/Frameworks/ExternalAccessory.framework; sourceTree = SDKROOT; };
+		933B374516712D0E00CEF2D3 /* WaveProperties.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = WaveProperties.plist; sourceTree = "<group>"; };
+		933B374F167167B700CEF2D3 /* Defaults.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Defaults.plist; sourceTree = "<group>"; };
+		933F67F81669236000DDC7B0 /* WaveScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WaveScrollView.h; sourceTree = "<group>"; };
+		933F67F91669236000DDC7B0 /* WaveScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WaveScrollView.m; sourceTree = "<group>"; };
+		93BE0BFE16632159008905AC /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		93CE65CD167BC5EE00F26738 /* app-icon-57.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "app-icon-57.png"; sourceTree = "<group>"; };
+		93CE65CF167BC5F200F26738 /* app-icon-114.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "app-icon-114.png"; sourceTree = "<group>"; };
+		93CE65D1167BC5FF00F26738 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		93CE65D3167BC62C00F26738 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		93CE65D5167BC63300F26738 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		93CE65D7167BC64400F26738 /* app-icon-72.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "app-icon-72.png"; sourceTree = "<group>"; };
+		93CE65D9167BC69300F26738 /* app-icon-144.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "app-icon-144.png"; sourceTree = "<group>"; };
+		93CE65DB167BC6A400F26738 /* Default-Portrait~ipad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-Portrait~ipad.png"; sourceTree = "<group>"; };
+		93CE65DD167BC6A600F26738 /* Default-Landscape~ipad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-Landscape~ipad.png"; sourceTree = "<group>"; };
+		93CE65DF167BC6B200F26738 /* Default-Portrait@2x~ipad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-Portrait@2x~ipad.png"; sourceTree = "<group>"; };
+		93CE65E1167BC6B500F26738 /* Default-Landscape@2x~ipad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-Landscape@2x~ipad.png"; sourceTree = "<group>"; };
+		93FF2238166F032B00DA60CE /* CoreText.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreText.framework; path = System/Library/Frameworks/CoreText.framework; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		9321EB85165DBCF60002212E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				93FF2239166F032B00DA60CE /* CoreText.framework in Frameworks */,
+				9330DDE41666BEFB00A8251B /* ExternalAccessory.framework in Frameworks */,
+				9330DDE21666BEF400A8251B /* AudioToolbox.framework in Frameworks */,
+				93BE0BFF16632159008905AC /* QuartzCore.framework in Frameworks */,
+				9321EB8D165DBCF60002212E /* UIKit.framework in Frameworks */,
+				9321EB8F165DBCF60002212E /* Foundation.framework in Frameworks */,
+				9321EB91165DBCF60002212E /* CoreGraphics.framework in Frameworks */,
+				9330DDE0166692BB00A8251B /* libTGAccessory.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		9321EB7D165DBCF60002212E = {
+			isa = PBXGroup;
+			children = (
+				93CE65E1167BC6B500F26738 /* Default-Landscape@2x~ipad.png */,
+				93CE65DF167BC6B200F26738 /* Default-Portrait@2x~ipad.png */,
+				93CE65DD167BC6A600F26738 /* Default-Landscape~ipad.png */,
+				93CE65DB167BC6A400F26738 /* Default-Portrait~ipad.png */,
+				93CE65D9167BC69300F26738 /* app-icon-144.png */,
+				93CE65D7167BC64400F26738 /* app-icon-72.png */,
+				93CE65D5167BC63300F26738 /* Default-568h@2x.png */,
+				93CE65D3167BC62C00F26738 /* Default@2x.png */,
+				93CE65D1167BC5FF00F26738 /* Default.png */,
+				93CE65CF167BC5F200F26738 /* app-icon-114.png */,
+				93CE65CD167BC5EE00F26738 /* app-icon-57.png */,
+				9321EB92165DBCF60002212E /* MindOMeter */,
+				9321EB8B165DBCF60002212E /* Frameworks */,
+				9321EB89165DBCF60002212E /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		9321EB89165DBCF60002212E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9321EB88165DBCF60002212E /* mindometer.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9321EB8B165DBCF60002212E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				93FF2238166F032B00DA60CE /* CoreText.framework */,
+				9330DDE31666BEFB00A8251B /* ExternalAccessory.framework */,
+				9330DDE11666BEF400A8251B /* AudioToolbox.framework */,
+				93BE0BFE16632159008905AC /* QuartzCore.framework */,
+				9321EB8C165DBCF60002212E /* UIKit.framework */,
+				9321EB8E165DBCF60002212E /* Foundation.framework */,
+				9321EB90165DBCF60002212E /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		9321EB92165DBCF60002212E /* MindOMeter */ = {
+			isa = PBXGroup;
+			children = (
+				9321EB9B165DBCF60002212E /* MindOMeterAppDelegate.h */,
+				9321EB9C165DBCF60002212E /* MindOMeterAppDelegate.m */,
+				9321EBA4165DBCF60002212E /* MainStoryboard_iPhone.storyboard */,
+				9321EBA7165DBCF60002212E /* MainStoryboard_iPad.storyboard */,
+				9321EBAA165DBCF60002212E /* MindOMeterMainViewController.h */,
+				9321EBAB165DBCF60002212E /* MindOMeterMainViewController.m */,
+				9321EBAD165DBCF60002212E /* MindOMeterFlipsideViewController.h */,
+				9321EBAE165DBCF60002212E /* MindOMeterFlipsideViewController.m */,
+				933F67F81669236000DDC7B0 /* WaveScrollView.h */,
+				933F67F91669236000DDC7B0 /* WaveScrollView.m */,
+				9330DDC91666927500A8251B /* Libraries */,
+				9321EB93165DBCF60002212E /* Supporting Files */,
+			);
+			path = MindOMeter;
+			sourceTree = "<group>";
+		};
+		9321EB93165DBCF60002212E /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				9321EB94165DBCF60002212E /* MindOMeter-Info.plist */,
+				9321EB95165DBCF60002212E /* InfoPlist.strings */,
+				9321EB98165DBCF60002212E /* main.m */,
+				9321EB9A165DBCF60002212E /* MindOMeter-Prefix.pch */,
+				933B374516712D0E00CEF2D3 /* WaveProperties.plist */,
+				933B374F167167B700CEF2D3 /* Defaults.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		9330DDC91666927500A8251B /* Libraries */ = {
+			isa = PBXGroup;
+			children = (
+				9330DDCA166692BB00A8251B /* FSKLibrary */,
+				9330DDD8166692BB00A8251B /* libTGAccessory.a */,
+				9330DDD9166692BB00A8251B /* TGAccessoryDelegate.h */,
+				9330DDDA166692BB00A8251B /* TGAccessoryManager.h */,
+			);
+			name = Libraries;
+			sourceTree = "<group>";
+		};
+		9330DDCA166692BB00A8251B /* FSKLibrary */ = {
+			isa = PBXGroup;
+			children = (
+				9330DDCB166692BB00A8251B /* AudioQueueObject.h */,
+				9330DDCC166692BB00A8251B /* AudioQueueObject.m */,
+				9330DDCD166692BB00A8251B /* AudioSignalAnalyzer.h */,
+				9330DDCE166692BB00A8251B /* AudioSignalAnalyzer.m */,
+				9330DDCF166692BB00A8251B /* AudioSignalGenerator.h */,
+				9330DDD0166692BB00A8251B /* AudioSignalGenerator.m */,
+				9330DDD1166692BB00A8251B /* CharReceiver.h */,
+				9330DDD2166692BB00A8251B /* Constants.h */,
+				9330DDD3166692BB00A8251B /* FSKRecognizer.h */,
+				9330DDD4166692BB00A8251B /* FSKRecognizer.mm */,
+				9330DDD5166692BB00A8251B /* FSKSerialGenerator.h */,
+				9330DDD6166692BB00A8251B /* FSKSerialGenerator.m */,
+				9330DDD7166692BB00A8251B /* lockfree.h */,
+			);
+			path = FSKLibrary;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		9321EB87165DBCF60002212E /* MindOMeter */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9321EBB2165DBCF60002212E /* Build configuration list for PBXNativeTarget "MindOMeter" */;
+			buildPhases = (
+				9321EB84165DBCF60002212E /* Sources */,
+				9321EB85165DBCF60002212E /* Frameworks */,
+				9321EB86165DBCF60002212E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MindOMeter;
+			productName = MindOMeter;
+			productReference = 9321EB88165DBCF60002212E /* mindometer.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		9321EB7F165DBCF60002212E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = MindOMeter;
+				LastUpgradeCheck = 0450;
+				ORGANIZATIONNAME = "Grant Patterson";
+			};
+			buildConfigurationList = 9321EB82165DBCF60002212E /* Build configuration list for PBXProject "MindOMeter" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 9321EB7D165DBCF60002212E;
+			productRefGroup = 9321EB89165DBCF60002212E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				9321EB87165DBCF60002212E /* MindOMeter */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		9321EB86165DBCF60002212E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9321EB97165DBCF60002212E /* InfoPlist.strings in Resources */,
+				9321EBA6165DBCF60002212E /* MainStoryboard_iPhone.storyboard in Resources */,
+				9321EBA9165DBCF60002212E /* MainStoryboard_iPad.storyboard in Resources */,
+				933B374616712D0E00CEF2D3 /* WaveProperties.plist in Resources */,
+				933B3750167167B700CEF2D3 /* Defaults.plist in Resources */,
+				93CE65CE167BC5EE00F26738 /* app-icon-57.png in Resources */,
+				93CE65D0167BC5F200F26738 /* app-icon-114.png in Resources */,
+				93CE65D2167BC5FF00F26738 /* Default.png in Resources */,
+				93CE65D4167BC62C00F26738 /* Default@2x.png in Resources */,
+				93CE65D6167BC63300F26738 /* Default-568h@2x.png in Resources */,
+				93CE65D8167BC64400F26738 /* app-icon-72.png in Resources */,
+				93CE65DA167BC69300F26738 /* app-icon-144.png in Resources */,
+				93CE65DC167BC6A400F26738 /* Default-Portrait~ipad.png in Resources */,
+				93CE65DE167BC6A600F26738 /* Default-Landscape~ipad.png in Resources */,
+				93CE65E0167BC6B200F26738 /* Default-Portrait@2x~ipad.png in Resources */,
+				93CE65E2167BC6B500F26738 /* Default-Landscape@2x~ipad.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		9321EB84165DBCF60002212E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9321EB99165DBCF60002212E /* main.m in Sources */,
+				9321EB9D165DBCF60002212E /* MindOMeterAppDelegate.m in Sources */,
+				9321EBAC165DBCF60002212E /* MindOMeterMainViewController.m in Sources */,
+				9321EBAF165DBCF60002212E /* MindOMeterFlipsideViewController.m in Sources */,
+				9330DDDB166692BB00A8251B /* AudioQueueObject.m in Sources */,
+				9330DDDC166692BB00A8251B /* AudioSignalAnalyzer.m in Sources */,
+				9330DDDD166692BB00A8251B /* AudioSignalGenerator.m in Sources */,
+				9330DDDE166692BB00A8251B /* FSKRecognizer.mm in Sources */,
+				9330DDDF166692BB00A8251B /* FSKSerialGenerator.m in Sources */,
+				933F67FA1669236000DDC7B0 /* WaveScrollView.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		9321EB95165DBCF60002212E /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9321EB96165DBCF60002212E /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		9321EBA4165DBCF60002212E /* MainStoryboard_iPhone.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9321EBA5165DBCF60002212E /* en */,
+			);
+			name = MainStoryboard_iPhone.storyboard;
+			sourceTree = "<group>";
+		};
+		9321EBA7165DBCF60002212E /* MainStoryboard_iPad.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9321EBA8165DBCF60002212E /* en */,
+			);
+			name = MainStoryboard_iPad.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		9321EBB0165DBCF60002212E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		9321EBB1165DBCF60002212E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		9321EBB3165DBCF60002212E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MindOMeter/MindOMeter-Prefix.pch";
+				INFOPLIST_FILE = "MindOMeter/MindOMeter-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/MindOMeter\"",
+				);
+				PRODUCT_NAME = mindometer;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		9321EBB4165DBCF60002212E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MindOMeter/MindOMeter-Prefix.pch";
+				INFOPLIST_FILE = "MindOMeter/MindOMeter-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/MindOMeter\"",
+				);
+				PRODUCT_NAME = mindometer;
+				VALIDATE_PRODUCT = NO;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		93CE65E3167BDFB100F26738 /* AppStore */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Grant Patterson";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "4080CFB9-F7AF-44D1-8A57-B7C22569B811";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = AppStore;
+		};
+		93CE65E4167BDFB100F26738 /* AppStore */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MindOMeter/MindOMeter-Prefix.pch";
+				INFOPLIST_FILE = "MindOMeter/MindOMeter-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/MindOMeter\"",
+				);
+				PRODUCT_NAME = mindometer;
+				WRAPPER_EXTENSION = app;
+			};
+			name = AppStore;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		9321EB82165DBCF60002212E /* Build configuration list for PBXProject "MindOMeter" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9321EBB0165DBCF60002212E /* Debug */,
+				9321EBB1165DBCF60002212E /* Release */,
+				93CE65E3167BDFB100F26738 /* AppStore */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9321EBB2165DBCF60002212E /* Build configuration list for PBXNativeTarget "MindOMeter" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9321EBB3165DBCF60002212E /* Debug */,
+				9321EBB4165DBCF60002212E /* Release */,
+				93CE65E4167BDFB100F26738 /* AppStore */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 9321EB7F165DBCF60002212E /* Project object */;
+}

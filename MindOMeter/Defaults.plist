@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>runInBackground</key>
+	<false/>
+	<key>selectedWaves</key>
+	<array>
+		<string>eSenseAttention</string>
+		<string>eSenseMeditation</string>
+		<string>eegDelta</string>
+		<string>eegTheta</string>
+		<string>eegLowAlpha</string>
+		<string>eegHighAlpha</string>
+		<string>eegLowBeta</string>
+		<string>eegHighBeta</string>
+		<string>eegLowGamma</string>
+		<string>eegHighGamma</string>
+		<string>poorSignal</string>
+	</array>
+</dict>
+</plist>
